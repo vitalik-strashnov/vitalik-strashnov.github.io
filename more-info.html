@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>Mr Vitalik</title>
+	<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Vitalik Stashnov</h4>
+              <span>C++ & C# Developer</span><br>
+              <span>Reverse Engineer (x86_64, armv7a, armv8a)</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">IDA Pro knowledge</a></li>
+                <li><a href="#section2">Server development skills</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <div class="white-button">
+                <a href="index.html">Go Back</a>
+              </div>
+              <br>
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://github.com/VitalikObject" target="_blank">
+                    <i class="fa fa-github"></i
+                  ></a>
+                </li>   
+              </ul>           
+            </div>
+            <div class="copyright-text">
+              <p>Copyright <script>document.write(/\d{4}/.exec(Date())[0])</script></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+            <h2>IDA Pro knowledge</h2>
+            <div class="line-dec"></div>
+            <span>
+              In addition to my extensive experience with Supercell games and their underlying assembler and logic, I have honed my skills with IDA Pro to a proficient level. My dedication to understanding the intricacies of game development led me to delve deep into reverse engineering, allowing me to unlock developer-hidden features and even implement my own enhancements within the game.
+              
+              My expertise extends to understanding machine code effortlessly, enabling me to navigate through complex program structures with ease. Whether it's dissecting binaries, reverse engineering software, or conducting in-depth code analysis, I am well-versed in leveraging IDA Pro to uncover critical insights and drive meaningful improvements.
+              
+              This proficiency not only showcases my technical prowess but also reflects my commitment to staying at the forefront of the field, continuously seeking opportunities to enhance my reverse engineering skills and contribute positively to software development projects.
+              
+              Building on my extensive experience with Supercell games and their underlying assembler and logic, I have dedicated significant time and effort to mastering IDA Pro, a powerful tool in the world of reverse engineering and code analysis.
+              
+              My journey into reverse engineering began with a fascination for the inner workings of Supercell games. I immersed myself in understanding the intricate details of their assembly code, a journey that involved countless hours of dissection, exploration, and experimentation. Through this process, I not only uncovered developer-hidden features but also had the opportunity to augment the gaming experience by adding my own unique elements, demonstrating my creative problem-solving skills within the realm of game development.
+              
+              My proficiency in IDA Pro extends beyond these practical applications. I possess a deep understanding of machine code, enabling me to navigate through complex software structures with confidence. Whether it's deciphering binaries, unraveling cryptic algorithms, or conducting thorough code analysis, IDA Pro has become an indispensable ally in my pursuit of technical excellence.
+              
+              My commitment to refining my IDA Pro skills reflects a broader dedication to staying at the forefront of technology and software development. I actively seek opportunities to expand my knowledge and expertise, with the aim of contributing meaningfully to software projects, enhancing security measures, and fostering innovation in the field of reverse engineering.
+			      </span>
+          </div>
+      </section>
+
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Server development skills</h2>
+            <div class="line-dec"></div>
+            <span>
+              Thanks to my ability in reverse engineering, I have always been able to approach server development in an innovative way. Using my reverse-engineering ability, I built servers that can address not just the technical needs of the industry but also the complicated gameplay dynamics of such famous games as Supercell. Coupling my capability in reverse engineering and server development has allowed me develop servers with advanced features and aligned to the games that I have been involved in.
+
+              In short, I draw my competitive advantage from my history of building high performance servers; ability to keep abreast of advancing technologies in the field; and knack for integrating complex game logic into server solutions. Such capabilities make me an ideal person to develop strong, proactive server systems.
+              
+              It is really about my expertise of reverse engineering that makes me stand out in my server development skills. Leveraging skills derived from reverse engineering Supercell games has enabled me create servers that are not only functional but transformative. I have carefully engineered the whole logic of the games into my servers making them very real and players friendly. The blend of reverse engineering competence with the capability of developing servers has lead to inventive, cost-effective and interactive servers designed just like my own gaming experience on the different games.
+			      </span>
+          </div>
+      </section>
+
+    </div>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>
